@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторадио Черноморское 103.2 FM - №1 в России | Авторадио Крым</title>
+    <meta name="description" content="Авторадио Черноморское 103.2 FM - радиостанция №1 в России. Авторадио Крым, Западный Крым. Реклама, эфир, контакты. Телефон: +7 979 032-10-32">
+    <meta name="keywords" content="Авторадио Черноморское, Авторадио Крым, Авторадио Западный Крым, радио 103.2 FM, радиостанция Крым, реклама на радио">
+    <meta name="author" content="Авторадио Черноморское">
+    <meta property="og:title" content="Авторадио Черноморское 103.2 FM - №1 в России">
+    <meta property="og:description" content="Авторадио Черноморское 103.2 FM - радиостанция №1 в России. Реклама, эфир, контакты.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="canonical" href="/">
+    
+    <style>
+        /* Importing Russo One font for the header */
+        @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+        /* Importing Open Sans for the body */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        /* Updated header styles */
+        .header {
+            background: linear-gradient(135deg, #d93434, #b71c1c);
+            color: white;
+            padding: 20px; /* Adjusted padding */
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centered content */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 15px; /* Significantly reduced gap for closer spacing */
+        }
+
+        .header-logo {
+            height: 80px;
+            width: 80px; /* Set width for a perfect circle */
+            border-radius: 50%; /* Makes the logo round */
+            object-fit: cover; /* Ensures the image covers the area */
+        }
+        
+        .header-text-blocks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        /* Shared styles for the skewed blocks */
+        .header-block {
+            display: inline-block;
+            font-family: 'Russo One', sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            transform: skewX(-15deg); /* Applying the slant effect */
+            letter-spacing: 1.5px;
+        }
+
+        /* Specific styles for each block */
+        .title-main {
+            background: #d32f2f;
+            color: white;
+            padding: 5px 20px;
+            font-size: 2.25rem;
+            border: 2px solid #a11b1b; 
+        }
+
+        .region {
+            background: #f0f0f0;
+            color: #c62828;
+            padding: 4px 18px;
+            font-size: 1.35rem; /* New style for the region block */
+            border: 2px solid #e0e0e0;
+        }
+
+        .frequency {
+            background: white;
+            color: #d32f2f;
+            padding: 4px 18px;
+            font-size: 1.25rem;
+            border: 2px solid #e0e0e0;
+        }
+
+        .slogan {
+            background: #d32f2f;
+            color: white;
+            padding: 5px 20px;
+            font-size: 1.5rem;
+            border: 2px solid #a11b1b;
+        }
+        
+        /* Main content styles */
+        .main-content {
+            padding: 60px 0;
+        }
+        
+        .section {
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d32f2f;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #d32f2f, #1976d2);
+            border-radius: 2px;
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .about-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #d32f2f;
+            transition: all 0.3s ease;
+        }
+        
+        .about-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .about-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #d32f2f;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .about-card .icon {
+            font-size: 1.8rem;
+            color: #1976d2;
+        }
+        
+        .about-card p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+        
+        .contacts-section {
+            background: white;
+            padding: 60px 0;
+        }
+        
+        .contacts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(to right, #d32f2f, #1976d2);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .contact-card:hover {
+            background: white;
+            border-color: #d32f2f;
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+            color: #d32f2f;
+        }
+        
+        .contact-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 400;
+        }
+        
+        .contact-card:hover .contact-title {
+            color: #d32f2f;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .footer-info {
+            text-align: center;
+        }
+        
+        .footer-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #ffcdd2;
+        }
+        
+        .footer-info p {
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px 10px;
+            }
+            .header-content {
+                justify-content: center; /* Center content on mobile */
+                gap: 20px;
+            }
+            .header-text-blocks {
+                gap: 5px;
+                align-items: center;
+            }
+            .title-main {
+                font-size: 1.8rem;
+                padding: 4px 12px;
+            }
+            .region {
+                font-size: 1.1rem;
+            }
+            .frequency {
+                font-size: 1rem;
+                padding: 3px 10px;
+            }
+            .slogan {
+                font-size: 1.2rem;
+                padding: 4px 12px;
+            }
+
+            .main-content {
+                padding: 30px 0;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .contacts-grid {
+                /* Changed to 2 columns for mobile */
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+            .contact-card {
+                padding: 20px; /* Reduced padding for smaller cards */
+            }
+            .contact-icon {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+            .contact-title {
+                font-size: 1rem;
+            }
+            .contact-info {
+                font-size: 0.8rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+            .footer-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RadioStation",
+        "name": "Авторадио Черноморское",
+        "description": "Радиостанция Авторадио в Черноморском, Крым. 103.2 FM",
+        "url": "/",
+        "telephone": "+79790321032",
+        "email": "avtoradio_che@mail.ru",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Черноморское",
+            "addressRegion": "Крым",
+            "addressCountry": "RU"
+        },
+        "broadcastFrequency": "103.2 FM",
+        "sameAs": [
+            "https://t.me/Avtoradio_che",
+            "https://wa.me/79790321032"
+        ]
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- New header structure -->
+            <div class="header-content">
+                <img src="logo.png" alt="Логотип Авторадио" class="header-logo">
+                <div class="header-text-blocks">
+                    <div class="header-block title-main">АВТОРАДИО</div>
+                    <div class="header-block region">ЧЕРНОМОРСКОЕ</div>
+                    <div class="header-block frequency">103.2FM</div>
+                    <div class="header-block slogan">№1 в РОССИИ</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <div class="container">
+            <!-- Sections are now swapped -->
+            <section class="section" id="about">
+                <h2 class="section-title">О радиостанции</h2>
+                
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3><span class="icon">📻</span>Авторадио Черноморское</h3>
+                        <!-- Updated text -->
+                        <p>Добро пожаловать на официальный сайт радиостанции Авторадио в Черноморском! Наше радио, №1 в России по числу слушателей, ведет круглосуточное вещание на частоте 103.2 FM, предлагая лучшую музыку и шоу-программы для жителей Западного Крыма.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><span class="icon">🎵</span>Качественный эфир</h3>
+                        <p>Наша радиостанция - это качественный звук, профессиональные ведущие и только проверенная музыка. Мы работаем для вас 24 часа в сутки, 7 дней в неделю, создавая атмосферу комфорта и хорошего настроения.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><span class="icon">📺</span>Реклама на радио</h3>
+                        <!-- Updated text -->
+                        <p>Размещайте рекламу на самой популярной радиостанции России. Мы поможем эффективно донести ваше сообщение до целевой аудитории. Профессиональный подход и быстрый результат.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><span class="icon">🚗</span>Музыка в дороге</h3>
+                        <p>Авторадио - идеальный спутник в вашем автомобиле. Лучшие хиты, новинки и классика российской эстрады сделают любую поездку приятной и комфортной. Мы знаем, что вы любите слушать!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contacts-section" id="contacts">
+                <div class="container">
+                    <h2 class="section-title">Связаться с нами</h2>
+                    
+                    <div class="contacts-grid">
+                        <a href="tel:+79790321032" class="contact-card">
+                            <span class="contact-icon">📞</span>
+                            <div class="contact-title">Позвонить</div>
+                            <div class="contact-info">+7 979 032-10-32</div>
+                        </a>
+                        
+                        <a href="https://t.me/Avtoradio_che" target="_blank" class="contact-card">
+                            <span class="contact-icon">📱</span>
+                            <div class="contact-title">Telegram</div>
+                            <div class="contact-info">@Avtoradio_che</div>
+                        </a>
+                        
+                        <a href="mailto:avtoradio_che@mail.ru" class="contact-card">
+                            <span class="contact-icon">✉️</span>
+                            <div class="contact-title">Электронная почта</div>
+                            <div class="contact-info">avtoradio_che@mail.ru</div>
+                        </a>
+                        
+                        <a href="https.me/79790321032?text=%D0%A0%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%BD%D0%B0%D1%8F%20%D1%81%D0%BB%D1%83%D0%B6%D0%B1%D0%B0%20%D0%90%D0%B2%D1%82%D0%BE%D1%80%D0%B0%D0%B4%D0%B8%D0%BE" target="_blank" class="contact-card">
+                            <span class="contact-icon">💬</span>
+                            <div class="contact-title">WhatsApp</div>
+                            <div class="contact-info">Рекламная служба</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Авторадио Черноморское</h3>
+                    <p>Крым • Западный Крым • 103.2 FM</p>
+                    <p>Лучшая музыка в вашем автомобиле</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
